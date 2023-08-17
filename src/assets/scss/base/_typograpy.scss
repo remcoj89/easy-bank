@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap');
+@import '../abstracts/variables';
 
 // Font familiy
 $font-family-heading: 'Public Sans', sans-serif;
 $font-family-primary: 'Public Sans', sans-serif;
+
+// colors
+$hero-color: $color-primary-dark-blue;
+$primary-color: $color-neutral-Grayis-blue;
 
 body {
   font-family: $font-family-primary;

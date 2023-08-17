@@ -6,12 +6,11 @@
   box-sizing: inherit;
 }
 
-
 html {
   font-size: 62.5%;
   line-height: 1.5;
 
-  @media(max-width: 375px) {
+  @media (max-width: 375px) {
     font-size: 50%;
   }
 }

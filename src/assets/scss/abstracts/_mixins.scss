@@ -1,10 +1,21 @@
+@import '../abstracts/variables';
+
 $breakpoints: (
-    mob: (
-        min: 375px,
-        max: 374.98px,
-    ),
-    desc: (
-      min: 1440px,
-      max: 1439.98px,
-    )
+  mob: (
+    min: 375px,
+    max: 374.98px
+  ),
+  desc: (
+    min: 1440px,
+    max: 1439.98px
+  )
 );
+
+@mixin hero-title {
+  color: $hero-color;
+  font-weight: 300;
+}
+
+@mixin text-primary {
+  color: $primary-color;
+}
