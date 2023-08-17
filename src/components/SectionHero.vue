@@ -1,5 +1,7 @@
 <template>
-  <section class="hero">
+  <section id="hero">
+    <img id="hero__image" src="../assets/icons/bg-intro-desktop.svg" alt="hero-image" />
+  <div class="section__wrapper hero">
     <div class="hero__left">
       <div class="content">
         <h1 class="content--title">Next Generation <span>Digital Banking</span></h1>
@@ -11,9 +13,9 @@
       </div>
     </div>
     <div class="hero__right">
-      <img class="hero__right--image" src="../assets/icons/bg-intro-desktop.svg" alt="hero-image" />
       <img class="overlay-image" src="src/assets/images/image-mockups.png" alt="" />
     </div>
+  </div>
   </section>
 </template>
 

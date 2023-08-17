@@ -1,9 +1,16 @@
 <template>
-  <main></main>
+  <main>
+    <SectionUsp />
+  </main>
 </template>
 
 <script>
+import SectionUsp from '../components/SectionUsp.vue';
+
 export default {
-  name: 'home-view'
+  name: 'home-view',
+  components: {
+    SectionUsp,
+  }
 }
 </script>

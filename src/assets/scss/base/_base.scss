@@ -1,6 +1,7 @@
 @import '../abstracts/mixins';
 
-body {
+.section__wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  padding-left:4.6rem;
 }

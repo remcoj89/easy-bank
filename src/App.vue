@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Hero_Component from './components/hero.vue'
+import Hero_Component from './components/SectionHero.vue'
 
 export default {
   name: 'app-vue',
