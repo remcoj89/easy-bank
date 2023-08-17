@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import SectionUsp from '../components/SectionUsp.vue';
+import SectionUsp from '../components/SectionUsp.vue'
 
 export default {
   name: 'home-view',
   components: {
-    SectionUsp,
+    SectionUsp
   }
 }
 </script>
