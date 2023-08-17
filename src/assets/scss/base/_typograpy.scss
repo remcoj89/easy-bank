@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap');
+
+// Font familiy
+$font-family-heading: 'Public Sans', sans-serif;
+$font-family-primary: 'Public Sans', sans-serif;
+
+body {
+  font-family: $font-family-primary;
+  font-size: 1.8rem;
+}
