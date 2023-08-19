@@ -1,15 +1,17 @@
 @import '../abstracts/variables';
 
-$breakpoints: (
-  mob: (
-    min: 375px,
-    max: 374.98px
-  ),
-  desc: (
-    min: 1440px,
-    max: 1439.98px
-  )
-);
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media screen and (max-width: 375px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+}
 
 @mixin hero-title {
   color: $hero-color;

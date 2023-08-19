@@ -8,6 +8,10 @@
     grid-template-columns: repeat(3, 20%) 40%;
     height: fit-content;
     padding: 1.8rem 0;
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
 
     &__grid-box {
       padding: 1.8rem;
@@ -20,6 +24,11 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @include respond(phone) {
+          align-items: center;
+          gap: 1.6rem;
+        }
+
         // Logo
         &--logo {
           display: flex;
@@ -30,6 +39,9 @@
         &--socials {
           display: flex;
           justify-content: space-evenly;
+          @include respond(phone) {
+            gap: 1.6rem;
+          }
         }
       }
       // List items
@@ -47,6 +59,10 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-end;
+      @include respond(phone) {
+        align-items: center;
+        gap: 1.6rem;
+      }
 
       p {
         color: $color-neutral-Grayis-blue;

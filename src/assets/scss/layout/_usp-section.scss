@@ -11,6 +11,11 @@
   gap: 4.6rem;
   padding: 4.6rem 0;
 
+  @include respond(phone) {
+    text-align: center;
+    padding: 1.6rem;
+  }
+
   &--top {
     .top__title {
       display: block;
@@ -27,6 +32,10 @@
   &--bottom {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
 
     .bottom__card {
       &--icon {
