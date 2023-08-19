@@ -2,7 +2,6 @@
 @import '../base/typograpy';
 
 #section-usp {
-  min-height: 50vh;
   background: $color-neutral-light-Grayis-blue;
 }
 
@@ -17,6 +16,7 @@
       display: block;
       @include hero-title;
       font-size: 4.8rem;
+      margin-top: 5%;
     }
 
     .top__text {
