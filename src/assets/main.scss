@@ -1,8 +1,14 @@
+// abstracts
 @import './scss/abstracts/variables';
 @import './scss/abstracts/mixins';
+// base
 @import './scss/base/reset';
 @import './scss/base/base';
 @import './scss/base/typograpy';
+// layout
 @import './scss/layout/hero';
 @import './scss/layout/usp-section';
+@import './scss/layout/articles';
+//components
 @import './scss/components/buttons';
+@import './scss/components/card';
