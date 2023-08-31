@@ -35,6 +35,11 @@
           color: $color-neutral-white;
           font-size: 1.8rem;
           align-items: center;
+
+          img {
+            height: 1.23rem;
+            padding: 0;
+          }
         }
         // Socials
         &--socials {
@@ -70,10 +75,5 @@
         font-size: 1.6rem;
       }
     }
-  }
-
-  #logo {
-    height: 4.6rem;
-    fill: white;
   }
 }
