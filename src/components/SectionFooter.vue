@@ -4,7 +4,7 @@
       <div class="footer__grid-box">
         <div class="container__left">
           <div class="container__left--logo">
-            <img id="logo" src="src/assets/icons/logo.svg" width="30" alt="easybank logo" />
+            <img id="logo" src="src/assets/icons/logo.svg" width="30" fill="#ffffff" alt="easybank logo" />
             <h2>easybank</h2>
           </div>
           <div class="container__left--socials">

@@ -1,7 +1,7 @@
 <template>
   <section class="section__wrapper">
     <div class="nav-bar">
-      <img class="nav-bar__logo" src="@/assets/icons/logo.svg" height="15" alt="easybank logo" />
+      <img class="nav-bar__logo" src="@/assets/icons/logo.svg" height="15" fill="black" alt="easybank logo" />
       <ul class="nav-bar__nav-list">
         <li>Home</li>
         <li>About</li>
