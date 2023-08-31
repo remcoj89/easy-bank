@@ -15,6 +15,7 @@
 
   @include respond(phone) {
     flex-direction: column-reverse;
+    padding-left: 3.2rem;
   }
 
   &__left {
