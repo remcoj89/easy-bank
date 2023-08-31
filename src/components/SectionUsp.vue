@@ -1,6 +1,6 @@
 <template>
-  <section id="section-usp">
-    <div class="section__wrapper section__usp">
+  <section id="section-usp" class="section__wrapper">
+    <div class="section__usp">
       <!-- USP section title -->
       <div class="section__usp--top">
         <h2 class="top__title">Why Choose for Easy Bank?</h2>

@@ -1,7 +1,6 @@
 <template>
   <section id="hero">
-    <img id="hero__image" src="../assets/icons/bg-intro-desktop.svg" alt="hero-image" />
-    <div class="section__wrapper hero">
+    <div class="hero">
       <div class="hero__left">
         <div class="content">
           <h1 class="content--title">Next Generation <span>Digital Banking</span></h1>
@@ -13,7 +12,10 @@
         </div>
       </div>
       <div class="hero__right">
-        <img class="overlay-image" src="src/assets/images/image-mockups.png" alt="" />
+        <!-- hero image -->
+        <img id="hero__image" src="@/assets/icons/bg-intro-desktop.svg" alt="hero-image" />
+        <!-- overlay image -->
+        <img class="overlay-image" src="@/assets/images/image-mockups.png" alt="overlay image" />
       </div>
     </div>
   </section>

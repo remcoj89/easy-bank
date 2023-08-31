@@ -2,26 +2,20 @@
 
 #hero {
   position: relative;
-  height: 75vh;
+  min-height: 85vh;
   text-align: end;
-  #hero__image {
-    position: absolute;
-    z-index: -1;
-    top: -30%;
-    right: 0;
-    width: 45%;
-    height: 100vh;
-  }
 }
 
 .hero {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   display: flex;
-  height: 75vh;
+  height: 100%;
+  padding-left: 3.2rem;
+
+  @include respond(phone) {
+    flex-direction: column-reverse;
+  }
 
   &__left {
     width: 50%;
@@ -29,12 +23,24 @@
     justify-content: start;
     text-align: left;
 
+    @include respond(phone) {
+      width: 100%;
+      height: 50%;
+      text-align: center;
+      padding: 0;
+    }
+
     .content {
       width: 75%;
       display: flex;
       flex-direction: column;
       margin: auto 0;
       gap: 1.8rem;
+
+      @include respond(phone) {
+        align-items: center;
+        width: 100%;
+      }
 
       &--title {
         display: block;
@@ -56,16 +62,34 @@
     width: 50%;
     height: 100%;
     position: relative;
-    // background-image: url('../assets/icons/bg-intro-desktop.svg');
-    // // background-size: cover;
-    // background-position: -10% top;
+    @include respond(phone) {
+      width: 100%;
+      height: 50%;
+      margin-bottom: 2.2rem;
+      overflow: hidden;
+    }
+  }
+
+  #hero__image {
+    width: 100%;
+    height: 110%;
+    margin-top: -7%;
+    @include respond(phone) {
+      height: 100%;
+      margin-top: 0;
+    }
   }
   .overlay-image {
     position: absolute;
     top: -10%;
-    right: -10%;
-    // height: 85vh;
+    right: 0;
     width: 85%;
-    object-fit: cover;
+
+    @include respond(phone) {
+      width: 80%;
+      top: 0;
+      left: 10%;
+      right: 10%;
+    }
   }
 }

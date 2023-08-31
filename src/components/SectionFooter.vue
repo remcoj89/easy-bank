@@ -1,10 +1,9 @@
 <template>
-  <section id="footer">
-    <div class="section__wrapper footer">
+  <section id="footer" class="section__wrapper">
+    <div class="footer ">
       <div class="footer__grid-box">
         <div class="container__left">
           <div class="container__left--logo">
-            '
             <img src="src/assets/icons/logo.svg" alt="easybank logo" />
             <h2>easybank</h2>
           </div>
