@@ -23,6 +23,13 @@
       gap: 1.6rem;
       list-style: none;
       width: 50%;
+
+      &--list-item{
+        color: $color-neutral-Grayis-blue;
+        &:hover{
+          color: $color-primary-dark-blue;
+        }
+      }
     }
   }
 }

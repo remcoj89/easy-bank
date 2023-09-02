@@ -1,6 +1,6 @@
 <template>
-  <section id="footer" class="section__wrapper">
-    <div class="footer ">
+  <section id="footer">
+    <div class="footer section__wrapper">
       <div class="footer__grid-box">
         <div class="container__left">
           <div class="container__left--logo">
