@@ -12,8 +12,6 @@
         </div>
       </div>
       <div class="hero__right">
-        <!-- hero image -->
-        <img id="hero__image" src="" alt="hero-image" />
         <!-- overlay image -->
         <img class="overlay-image" src="@/assets/images/image-mockups.png" alt="overlay image" />
       </div>

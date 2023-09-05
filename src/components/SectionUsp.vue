@@ -15,7 +15,7 @@
         <div class="bottom__card">
           <img
             class="bottom__card--icon"
-            src="src/assets/icons/icon-online.svg"
+            src="@/assets/icons/icon-online.svg"
             alt="online banking"
           />
           <h2 class="bottom__card--title">Online Banking</h2>
@@ -28,7 +28,7 @@
         <div class="bottom__card">
           <img
             class="bottom__card--icon"
-            src="src/assets/icons/icon-budgeting.svg"
+            src="@/assets/icons/icon-budgeting.svg"
             alt="simple budget"
           />
           <h2 class="bottom__card--title">Simple Budgeting</h2>
@@ -41,7 +41,7 @@
         <div class="bottom__card">
           <img
             class="bottom__card--icon"
-            src="src/assets/icons/icon-onboarding.svg"
+            src="@/assets/icons/icon-onboarding.svg"
             alt="fast onboarding"
           />
           <h2 class="bottom__card--title">Fast Onboarding</h2>
@@ -52,7 +52,7 @@
         </div>
         <!-- Card 4 -->
         <div class="bottom__card">
-          <img class="bottom__card--icon" src="src/assets/icons/icon-api.svg" alt="open api" />
+          <img class="bottom__card--icon" src="@/assets/icons/icon-api.svg" alt="open api" />
           <h2 class="bottom__card--title">Open API</h2>
           <p class="bottom__card--text">
             Manage your savings, investments, pension, and much more from one account. Tracking your

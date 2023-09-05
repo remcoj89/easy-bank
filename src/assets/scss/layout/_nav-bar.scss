@@ -1,33 +1,60 @@
 @import '../abstracts/variables';
 
-#nav-bar{
+#nav-bar {
   background: $color-neutral-white;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 5;
   padding: 1.8rem 0;
-  justify-content: center;
 
-  .nav-bar{
-    display: flex;
+  // navigation bar desktop
+  .desktop-nav-bar {
     justify-content: space-between;
-    align-items:center;
+    display: flex;
+    align-items: center;
 
-    // &__logo{
-    //   size: 6.4rem;
-    // }
-
-    &__nav-list{
+    &__nav-list {
       display: flex;
       gap: 1.6rem;
       list-style: none;
       width: 50%;
 
-      &--list-item{
+      &--list-item {
         color: $color-neutral-Grayis-blue;
-        &:hover{
+        &:hover {
           color: $color-primary-dark-blue;
+        }
+      }
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  // Navigation bar mobile
+  .mobile-nav-bar {
+    display: none;
+    justify-content: space-between;
+    #burger-menu {
+      cursor: pointer;
+    }
+    @include respond(phone) {
+      display: flex;
+    }
+  }
+
+  .mobile-menu {
+    &__nav-list{
+      margin: 1.8rem;
+      border-radius: 5px;
+      list-style: none;
+      text-align: center;
+      padding: 1.8rem 0;
+      &--list-item{
+        padding: .8rem 0;
+        &:hover{
+          background-color: gray;
         }
       }
     }
