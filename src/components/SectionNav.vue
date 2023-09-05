@@ -24,21 +24,32 @@
       <img
         class="mobile-nav-bar__logo"
         src="@/assets/icons/logo.svg"
-        height="15"
+        height="25"
         width="200"
         fill="black"
         alt="easybank logo"
       />
-      <img id="burger-menu" src="@/assets/icons/icon-hamburger.svg" alt="hamburger menu" />
+      <img v-if="!showModal" id="burger-menu" src='@/assets/icons/icon-hamburger.svg' alt="hamburger menu" @click="toggleModal"/>
+      <img v-else-if="showModal" id="burger-menu" src='@/assets/icons/icon-close.svg' alt="hamburger menu" @click="toggleModal"/>
     </div>
   </section>
 </template>
 
 <script>
+import { useModalStore } from '@/stores/modalStore';
+import { mapWritableState, mapStores } from 'pinia';
 export default {
   name: 'nav-bar',
-  data() {
-    return {}
+  computed: {
+    ...mapStores(useModalStore),
+    ...mapWritableState(useModalStore, {
+        showModal: 'isOpen'
+    })
+  },
+  methods: {
+    toggleModal() {
+      this.showModal = !this.showModal
+    },
   }
 }
 </script>
