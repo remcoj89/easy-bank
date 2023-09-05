@@ -2,6 +2,7 @@
   <nav id="nav-bar">
     <Nav_Component />
   </nav>
+  <mobile-nav-modal />
   <header>
     <Hero_Component />
   </header>

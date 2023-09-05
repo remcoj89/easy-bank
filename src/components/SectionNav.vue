@@ -31,15 +31,6 @@
       />
       <img id="burger-menu" src="@/assets/icons/icon-hamburger.svg" alt="hamburger menu" />
     </div>
-    <div class="mobile-menu" v-show="showMobileMenu">
-      <ul class="mobile-menu__nav-list">
-        <li class="mobile-menu__nav-list--list-item">Home</li>
-        <li class="mobile-menu__nav-list--list-item">About</li>
-        <li class="mobile-menu__nav-list--list-item">Contact</li>
-        <li class="mobile-menu__nav-list--list-item">Blog</li>
-        <li class="mobile-menu__nav-list--list-item">Carreers</li>
-      </ul>
-    </div>
   </section>
 </template>
 
@@ -47,9 +38,7 @@
 export default {
   name: 'nav-bar',
   data() {
-    return {
-      showMobileMenu: false,
-    }
+    return {}
   }
 }
 </script>
